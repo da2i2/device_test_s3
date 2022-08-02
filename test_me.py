@@ -123,7 +123,7 @@ os.system("git config --global credential.https://github.com.username da2i2")
 os.system("git config --global credential.https://github.com.password Aiub@123456")
 
 print(Fore.GREEN + "============================================")
-print("PASSWORD: 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")
+print("PASSWORD: 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")
 print("============================================" + Fore.RESET)
 
 
