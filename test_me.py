@@ -119,6 +119,9 @@ with open('device_list_s3.txt', 'a') as f:
 
 print("================== Stress Test Done ====================")
 
+os.system("git config --global credential.https://github.com.username da2i2")
+os.system("git config --global credential.https://github.com.password Aiub@123456")
+
 print(Fore.GREEN + "============================================")
 print("PASSWORD: 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")
 print("============================================" + Fore.RESET)
