@@ -9,9 +9,9 @@ import threading
 import sys
 from colorama import Fore
 
-os.system("git config --global credential.https://github.com.username da2i2")
-os.system("git config --global credential.https://github.com.password Aiub@123456")
-os.system("git pull")
+# os.system("git config --global credential.https://github.com.username da2i2")
+# os.system("git config --global credential.https://github.com.password Aiub@123456")
+# os.system("git pull")
 
 now_time = datetime.datetime.now()
 now_time = str(now_time)
@@ -108,7 +108,7 @@ print("============================================")
 
 
 
-os.system('/home/pi/.local/bin/stressberry-run -n "Temp" -d 30 -i 30 -c 4 ' + Device_name + '.dat' )
+os.system('/home/pi/.local/bin/stressberry-run -n "Temp" -d 1800 -i 30 -c 4 ' + Device_name + '.dat' )
 os.system('MPLBACKEND=Agg /home/pi/.local/bin/stressberry-plot ' + Device_name + '.dat ' + '-f -d 300 -f -l 400 2200 -t 0 90 -o ' + Device_name + '.png')
 
 print("")
